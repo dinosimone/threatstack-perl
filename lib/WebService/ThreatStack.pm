@@ -64,7 +64,7 @@ This API client interfaces with the Threat Stack REST API.
  
     use WebService::ThreatStack;
  
-    my $castle = WebService::ThreatStack->new(
+    my $ts = WebService::ThreatStack->new(
         api_key => '[your-api-key]',
         debug   => 1
      );
@@ -105,9 +105,9 @@ sub agents {
 
 =head2 agent_by_id
 
-Get details of an specific agent resource. The id to use is id, not agent_id.
+Get details of a specific agent resource. The id to use is id, not agent_id.
 
-    my $agent_info = $ts->agent_by_id(id => $agent_id);
+    my $agent_info = $ts->agent_by_id(id => $id);
 
 =cut
 
@@ -126,7 +126,7 @@ sub agent_by_id {
 
 =head2 alerts
 
-This URI retrieves all recent Alerts related to your current active organization.
+This URI retrieves all recent alerts related to your current active organization.
 
     my $alerts = $ts->alerts(
         count => 20,

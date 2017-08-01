@@ -1,7 +1,6 @@
 # ThreatStack API Client for Perl
 
-Threat Stack is a provider of cloud security management and compliance solutions delivered using a Software as a service model. 
-This API client interfaces with the Threat Stack REST API.
+Threat Stack is a provider of cloud security management and compliance solutions delivered using a software as a service model. This is a Perl wrapper for the ThreatStack API service.
 
 
 ## Installation
@@ -38,14 +37,14 @@ List all agents assigned to your active organization.
 
 ### Get agent by ID
 
-Get details of an specific agent resource. The id to use is id, not agent_id.
+Get details of a specific agent resource. The id to use is id, not agent_id.
 
-    my $agent_info = $ts->agent_by_id(id => $agent_id);
+    my $agent_info = $ts->agent_by_id(id => $id);
 
 
 ### Get alerts
 
-This URI retrieves all recent Alerts related to your current active organization.
+This URI retrieves all recent alerts related to your current active organization.
 
     my $alerts = $ts->alerts(
         count => 20,
@@ -148,5 +147,5 @@ This project and the code therein was not created by and is not supported by Thr
 
 ## Author
 
-Dino Simone (dino@simone.is)
+Dino Simone | dinosimone.com
 
