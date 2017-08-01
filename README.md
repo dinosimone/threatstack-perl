@@ -147,5 +147,5 @@ This project and the code therein was not created by and is not supported by Thr
 
 ## Author
 
-Dino Simone | dinosimone.com
+Dino Simone (dino@simone.is)
 
